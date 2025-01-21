@@ -22,8 +22,10 @@ jobs:
       with:
         submodules: recursive
     - run: cargo update
-    - name: Build
-      run: cargo build --release --verbose
+    - name: Build Library
+      run: cargo build --lib --release --verbose
+    - name: Build Bin
+      run: cargo build --bins --release --verbose
     - uses: actions/upload-artifact@v4.6.0
       if: runner.os == 'Windows'
       with:
