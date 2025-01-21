@@ -1,0 +1,18 @@
+[package]
+name = "bti_tool"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bti_tool"
+path = "src\\main.rs"
+
+[lib]
+name = "bti_lib"
+path = "src\\lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+binrw = "0.14.1"
+gctex = "0.3.12"
+image = "0.25.5"
