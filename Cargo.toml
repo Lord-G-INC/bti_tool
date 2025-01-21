@@ -5,11 +5,11 @@ edition = "2021"
 
 [[bin]]
 name = "bti_tool"
-path = "src\\main.rs"
+path = "src/main.rs"
 
 [lib]
 name = "bti_lib"
-path = "src\\lib.rs"
+path = "src/lib.rs"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
